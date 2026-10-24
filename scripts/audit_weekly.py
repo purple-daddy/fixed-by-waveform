@@ -267,6 +267,8 @@ def run(a, log, today):
         since = json.loads(STATE.read_text()).get("last_ok") or "2026-10-23"
     except (OSError, ValueError):
         since = "2026-10-23"
+    if a.since and valid_date(a.since):
+        since = a.since
     log("start", "weekly audit", since=since, items=len(items), dry_run=a.dry_run)
     log.state = "asking claude"
     tracked = "\n".join(f"- {i['episode_date']} {i['company']}: {i['title'][:80]}" for i in items)
@@ -400,6 +402,7 @@ def main():
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--no-push", action="store_true")
     ap.add_argument("--auto-fixes", action="store_true", help="let verified fixes go live without a person (default: review file)")
+    ap.add_argument("--since", help="YYYY-MM-DD: look for episodes after this date (default: the last successful audit)")
     ap.add_argument("--fake-answer")
     a = ap.parse_args()
     log = Log()
