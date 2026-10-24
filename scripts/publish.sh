@@ -1,5 +1,5 @@
 #!/bin/bash
-# Rebuild, commit the data + site, push to the (PRIVATE) repo. The site is NOT public: GitHub Pages stays off until Jay says yes.
+# Rebuild, commit the data + site, push. GitHub Pages republishes https://purple-daddy.github.io/fixed-by-waveform/ in about a minute.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 python3 scripts/build.py

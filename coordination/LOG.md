@@ -1,4 +1,7 @@
 # Fixed by Waveform — log (newest at the top)
+## 2026-10-23 23:10 — Standby 09 (public)
+- Jay said yes (23:0x on 10-23, via the Coordinator): repo made PUBLIC and GitHub Pages turned on by the Coordinator; https://purple-daddy.github.io/fixed-by-waveform/ answers 200 (checked: the fan-made line is on the page, no host first names in the page). The Coordinator also loaded the weekly LaunchAgent. Updated STATUS, EVERYTHING-JAY-NEEDS-TO-DO, README rows, web-addresses.json, URL plan.
+
 ## 2026-10-23 21:14 — Standby 09 (review fixes)
 - Independent review (Sonnet): fixed the host first names that still showed in free text on unverified items (originals kept in gitignored reference/attributions-unverified.json; build.py now refuses them); footer wording; audit hardening: https hosts must be globally routable, hostile URLs can't crash the run, linear-time page-text extraction with a 30 s fetch cap, quote must match word for word, new gripes auto-add only from podscripts.co / pod.wave.co with the company named in the quote and a clean validation, FIXES GO TO THE REVIEW FILE by default (--auto-fixes to change), items.json re-read before writing, atomic write, only the two files this job writes are committed, claude -p loads project settings only.
 - Real dry runs through claude -p work (search ok): 0 new items since 2026-10-01 and 0 verified fixes, nothing written.

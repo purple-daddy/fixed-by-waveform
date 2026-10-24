@@ -1,2 +1,2 @@
 # Everything Jay needs to do — Fixed by Waveform
-One decision only: say yes when you want the site public (then turn on GitHub Pages and remove the noindex tag if you want it searchable).
+Nothing right now. The site is live. Optional, whenever: say so if you want it searchable (remove the noindex tag) or want a speaker named (someone checks the audio, then scripts/add.py raised).

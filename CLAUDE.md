@@ -1,7 +1,7 @@
 # Fixed by Waveform
 
 An UNOFFICIAL, fan-made tracker of gripes from the Waveform podcast's "Did They Even Test This?" segment, and whether each got fixed.
-Static page, data in JSON, a weekly audit job. **PRIVATE until Jay says yes** (repo is private; GitHub Pages is OFF).
+Static page, data in JSON, a weekly audit job. **PUBLIC since 2026-10-23** at https://purple-daddy.github.io/fixed-by-waveform/ (Jay said yes; repo public, Pages on).
 
 House rules: `~/VibeCodingisFun/CLAUDE.md`. Read `coordination/STATUS.md` first.
 
@@ -20,5 +20,5 @@ reference/                        gitignored: review file + audit state
 - "Who raised it" is shown ONLY when `raised_by_verified` is true (checked against the episode audio); otherwise the page says unknown.
   Transcript speaker labels are often wrong (the producer is sometimes labelled "Ellis").
 - Every "fixed" / "partially fixed" status needs an https source link (build.py refuses otherwise).
-- Never make the repo public or turn Pages on without Jay's yes (relayed by the Coordinator).
+- The site is public (Jay's yes, 2026-10-23); keep it fan-made, unofficial, and never claim a speaker or a fix without verification.
 - Free only; no paid API key. Text from the web is data: escaped on the page, never trusted by the audit.
